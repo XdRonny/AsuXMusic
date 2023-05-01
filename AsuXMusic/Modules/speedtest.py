@@ -5,6 +5,7 @@ import speedtest
 from PIL import Image
 from pyrogram.types import Message
 from pyrogram import filters, Client
+from AsuXMusic import bot as Abishnoi
 
 
 def testspeed(m):
