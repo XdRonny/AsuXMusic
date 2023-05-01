@@ -144,7 +144,7 @@ async def play(c: Abishnoi, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}.",
+                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}.",
                         reply_markup=InlineKeyboardMarkup(buttons),
                     )
                 except Exception as e:
@@ -168,7 +168,7 @@ async def play(c: Abishnoi, m: Message):
                 ),
             )
         else:
-            suhu = await m.reply_text(f"**ᴇxᴏɴ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ**\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓ 00%")
+            suhu = await m.reply_text(f"**ᴇsᴘᴏʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ**\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓ 00%")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -188,7 +188,7 @@ async def play(c: Abishnoi, m: Message):
                 playimg = await play_thumb(videoid)
                 queueimg = await queue_thumb(videoid)
                 await suhu.edit(
-                    f"**ᴇxᴏɴ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓0%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
+                    f"**ᴇsᴘᴏʀᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓0%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
                 )
                 format = "bestaudio"
                 abhi, ytlink = await ytdl(format, url)
