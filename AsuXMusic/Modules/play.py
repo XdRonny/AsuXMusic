@@ -203,7 +203,7 @@ async def play(c: Abishnoi, m: Message):
                         )
                         await m.reply_photo(
                             photo=queueimg,
-                            caption=f"⏳ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ ᴀᴛ {pos}\n\n👤ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
+                            caption=f"⏳ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ ᴀᴛ {pos}\n\n💘 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
                             reply_markup=InlineKeyboardMarkup(keyboard),
                         )
                     else:
