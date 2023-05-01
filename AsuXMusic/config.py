@@ -8,11 +8,11 @@ admins = {}
 
 SESSION_NAME = getenv("SESSION_NAME", "")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "6170365487:AAEIgj0O4wl54DNmzugwOnSE4Jsi0NSioQ4")
 API_ID = int(getenv("API_ID", "8186557"))
 API_HASH = getenv("API_HASH", "efd77b34c69c164ce158037ff5a0d117")
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "AbishnoiMF")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Abishnoi_bots")
+GROUP_SUPPORT = getenv("GROUP_SUPPORT", "BlackWorldMF")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "TheBothub")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "6213690669").split()))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6213690669").split()))
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "180"))
