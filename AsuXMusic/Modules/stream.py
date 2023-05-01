@@ -66,7 +66,7 @@ async def skip(client, m: Message):
         else:
             await m.reply_photo(
                 photo=f"{IMG_3}",
-                caption=f"⏭ **sᴋɪᴘᴘᴇᴅ ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ.**\n\n🏷 **ɴᴀᴍᴇ:** [{op[0]}]({op[1]})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {m.from_user.mention()}",
+                caption=f"⏭ **sᴋɪᴘᴘᴇᴅ ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ.**\n\n🏷 **ɴᴀᴍᴇ:** [{op[0]}]({op[1]})\n☁ **ᴄʜᴀᴛ:** `{chat_id}`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {m.from_user.mention()}",
                 reply_markup=keyboard,
             )
     else:
@@ -356,6 +356,6 @@ async def cbskip(_, query: CallbackQuery):
             chat_id,
             photo=image,
             reply_markup=InlineKeyboardMarkup(buttons),
-            caption=f"⏭ **sᴋɪᴘᴘᴇᴅ** ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ.\n\n🗂 **ɴᴀᴍᴇ:** [{queue[0]}]({queue[1]})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🧸 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}",
+            caption=f"⏭ **sᴋɪᴘᴘᴇᴅ** ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ.\n\n🥀 **ɴᴀᴍᴇ:** [{queue[0]}]({queue[1]})\n☁ **ᴄʜᴀᴛ:** `{chat_id}`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}",
         )
         remove_if_exists(image)
