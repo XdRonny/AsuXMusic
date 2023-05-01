@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from AsuXMusic import Abishnoi
+from AsuXMusic import bot as Abishnoi
 
 
 @Abishnoi.on_message(filters.command(["search"]))
