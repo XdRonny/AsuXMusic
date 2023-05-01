@@ -23,8 +23,8 @@ def testspeed(m):
     return result
 
 
-@Client.on_message(filters.command(["speedtest", "spt"], prefixes=["/", "!"]))
-async def speedtest_function(client, message):
+@Abishnoi.on_message(filters.command(["speedtest", "spt"]) & ~filters.group)
+async def start(client: Abishnoi, message: Message):
     m = await message.reply_text("💫 ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴇᴄᴋ ᴜᴩʟᴏᴀᴅ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ sᴩᴇᴇᴅ...")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
@@ -40,7 +40,7 @@ async def speedtest_function(client, message):
 **» __sᴩᴏɴsᴏʀ :__** {result['server']['sponsor']}
 **» __ʟᴀᴛᴇɴᴄʏ :__** {result['server']['latency']}  
 **» __ᴩɪɴɢ :__** {result['ping']}"""
-    msg = await NibiMusic.send_photo(
+    msg = await Abishnoi.send_photo(
         chat_id=message.chat.id, 
         photo=result["share"], 
         caption=output
