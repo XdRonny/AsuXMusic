@@ -125,7 +125,7 @@ async def play(c: Abishnoi, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link}) | `ᴍᴜsɪᴄ`\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {m.from_user.mention()}",
+                    caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link}) | `ᴍᴜsɪᴄ`\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {m.from_user.mention()}",
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
             else:
@@ -144,7 +144,7 @@ async def play(c: Abishnoi, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}\n📹 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** `ᴍᴜsɪᴄ`",
+                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n💘 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}.",
                         reply_markup=InlineKeyboardMarkup(buttons),
                     )
                 except Exception as e:
@@ -160,7 +160,7 @@ async def play(c: Abishnoi, m: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/AbishnoiMF"
+                                "• sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BlackWorldMF"
                             ),
                             InlineKeyboardButton("• ᴄʟᴏsᴇ", callback_data="cls"),
                         ]
@@ -183,7 +183,7 @@ async def play(c: Abishnoi, m: Message):
                 gcname = m.chat.title
                 videoid = search[4]
                 dlurl = f"https://www.youtubepp.com/watch?v={videoid}"
-                info = f"https://t.me/Exon_Robot?start=info_{videoid}"
+                info = f"https://t.me/NibiMusicBot?start=info_{videoid}"
                 keyboard = stream_markup(user_id, dlurl)
                 playimg = await play_thumb(videoid)
                 queueimg = await queue_thumb(videoid)
@@ -227,7 +227,7 @@ async def play(c: Abishnoi, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=playimg,
-                                caption=f"📡 sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ ᴀᴜᴅɪᴏ 💡\n\n👤ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
+                                caption=f"📡 sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ ᴀᴜᴅɪᴏ 💡\n\n💘 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
                                 reply_markup=InlineKeyboardMarkup(keyboard),
                             )
                         except Exception as ep:
